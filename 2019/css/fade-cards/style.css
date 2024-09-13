@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+body {
+  margin: 0;
+  padding:0;
+  background: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Inconsolata', monospace;
+}
+h1 {
+    color: #f9f9f9;
+}
+.container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 400px 0 0 400px;
+}
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 20px 100px rgba(0,0,0.8);
+    margin: 0 100px 0 0;
+}
+.card h1, p {
+    color: #1d1d1d;
+}

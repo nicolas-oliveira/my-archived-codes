@@ -1,0 +1,122 @@
+
+
+
+{
+   "contributors":null,
+   "coordinates":null,
+   "created_at":"Fri May 15 18:30:00 +0000 2020",
+   "display_text_range":[16,120],
+   "entities":{
+      "hashtags":[
+         0:{"text":"teste","indices":[16,22]},
+         1:{"text":"testecomment","indices":[23,36]},
+         2:{"text":"n","indices":[43,45]},
+         3:{"text":"a","indices":[46,48]},
+         4:{"text":"nn","indices":[49,52]},
+         5:{"text":"N","indices":[53,55]}
+      ],
+      "symbols":[],
+      "urls":[],
+      "user_mentions":[
+         0:{
+            "id":2319872346,
+            "id_str":"2319872346",
+            "indices":[0,15],
+            "name":"PEDROGA 🌈⃤🇭🇰",
+            "screen_name":"pedrohypollite"
+         },
+         1:{
+            "id":11222,
+            "id_str":"11222",
+            "indices":[56,58],
+            "name":"Kevin Socially Distanced Cheng",
+            "screen_name":"k"
+         },
+         2:{
+            "id":1253799954616930300,
+            "id_str":"1253799954616930304",
+            "indices":[62,78],
+            "name":"Bruxo Libertário",
+            "screen_name":"LibertarioBruxo"
+         },
+         3:{
+            "id":1036770944168194000,
+            "id_str":"1036770944168194048",
+            "indices":[79,93],
+            "name":"Rolê Aleatório",
+            "screen_name":"rolealeatorio"
+         },
+         4:{
+            "id":1015972843,
+            "id_str":"1015972843",
+            "indices":[94,102],
+            "name":"se o ℭoronavirus mata pq ngm prende ele 𓅭"            "screen_name":"brusnos"
+         }
+      ]
+   },
+   "favorite_count":0,
+   "favorited":false,
+   "full_text":"@pedrohypollite #teste #testecomment ### n #n #a #nn #N @k @m @LibertarioBruxo @rolealeatorio @brusnos Teste Commentário",
+   "geo":null,
+   "id":1261363217294676000,
+   "id_str":"1261363217294675972",
+   "in_reply_to_screen_name":"pedrohypollite",
+   "in_reply_to_status_id":1261360529299259400,
+   "in_reply_to_status_id_str":"1261360529299259393",
+   "in_reply_to_user_id":2319872346,
+   "in_reply_to_user_id_str":"2319872346",
+   "is_quote_status":false,
+   "lang":"pt",
+   "place":null,
+   "reply_count":0,
+   "retweet_count":0,
+   "retweeted":false,
+   "source":"",
+   "supplemental_language":null,
+   "truncated":false,
+   "user":{
+      "id":1052385025960894500,
+      "id_str":"1052385025960894465",
+      "name":"nick 🇭🇰"
+   }
+}
+
+{
+   "id":1261363217294676000,
+   "full_text":"",
+   "created_at":"Fri May 15 18:30:00 +0000 2020",
+   "hashtags":[],
+   "user_mentions":[],
+   "in_reply_to_screen_name":"pedrohypollite",
+   "in_reply_to_status_id":1261360529299259400,
+   "reply_count":0,
+   "retweet_count":0,
+   "favorite_count":0,
+   "favorited":false,
+   "retweeted":false,
+   "user":{
+      "id":1052385025960894500,
+      "name":"nick 🇭🇰"
+   }
+}
+
+"user":{
+   "id":1052385025960894500,
+   "name":"nick 🇭🇰",
+   "screen_name":"NickCageNick1",
+   "description":"Preguiçoso profissional, programador nas horas vagas, mineiro nos fins de semana e libertário",
+   "created_at":"Wed Oct 17 02:25:17 +0000 2018",
+   "friends_count":462,
+   "followers_count":33,
+   "statuses_count":1213,
+   "blocked":false,
+   "following":false,
+   "profile_image_url":"http://pbs.twimg.com/profile_images/1253799210958422016/p4yxX0bV_normal.jpg",
+}
+"user":{
+   "id":1052385025960894500,
+   "name":"nick 🇭🇰",
+   "screen_name":"NickCageNick1",
+   "description":"Preguiçoso profissional, programador nas horas vagas, mineiro nos fins de semana e libertário",
+   "created_at":"Wed Oct 17 02:25:17 +0000 2018",
+}

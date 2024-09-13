@@ -1,0 +1,91 @@
+.info .likeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+    -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.info .likeBox .like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info .likeBox .like p {
+  margin-left: 0.4em;
+}
+.info .likeBox p {
+  font-size: 12px;
+}
+.info .likeBox .like #like {
+  top: -3px;
+  width: 18px;
+}
+.info .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* For <hr></hr> tag */
+.info #lineTop {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 10px;
+}
+.info .buttons .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0.45em;
+  width: 100%;
+  color: #3E3E3E;
+  margin: 0.4em;
+  border-radius: 0.45em;
+  transition: background-color 0.2s;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+    -moz-user-select: none; 
+      -ms-user-select: none; 
+          user-select: none; 
+}
+.info .buttons .button span {
+  margin-left: 0.4em;
+}
+.info .buttons path {
+  fill: #3E3E3E;
+}
+.info .buttons svg {
+  width: 16px;
+  height: 16px;
+}
+.info .buttons .button:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.info .like {
+  position: relative;
+  z-index: 1;
+}
+.info .like:hover {
+  cursor: pointer;
+}
+.info .like .infoBox {
+  display: none;
+}
+.info .like:hover .infoBox {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: blue;
+}

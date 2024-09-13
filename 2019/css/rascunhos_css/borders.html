@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Modal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
+    * {
+        margin: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    body, html {
+        height: 100%;
+    }
+    body {
+        background: #c2c2c2;
+    }
+    article {
+        display: inline-block;
+        background: #ffffff;
+        border-radius: 20px;
+        border: solid 10px rgba(0, 0, 0, 0.445);
+        margin: 100px;
+        padding: 100px;
+        margin-bottom: 0;
+    }
+    article h1 {
+        font-family:  'Zilla Slab', serif;
+        padding: 10px;
+        font-size: 44px;
+    }
+    article p {
+        font-family:  'Zilla Slab', serif;
+        padding: 5px;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: justify;
+        margin-top: 10px;
+    }
+    /* EXEMPLOS DAS BORDAS */
+    p.um {
+        border: solid black; 
+    }
+    p.dois {
+        border: dashed black;
+    }
+    p.tres {
+        border-left: solid black;
+    }
+    p.quatro{
+        border-style: dashed solid dotted inset;
+    }
+    p.cinco {
+        border-left: solid 4px black;
+        background-color: #d1d0d0;
+    }
+    p.seis {
+        border: 5px #ff0000 solid ;
+        border-radius: 20px;
+    }
+    p.sete {
+        border-bottom: 4px #ff0000 solid;
+        background-color: #cfcfcf;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Borders</h1>
+            <p class="um"><b>Este é uma borda solid simples.</b> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam explicabo voluptatibus deserunt in, culpa iste ipsam aut nisi, praesentium facere cupiditate ex assumenda, eligendi nam velit magni aliquid? Rem, doloribus.</p>
+            <p class="dois"><b>Este é uma borda dashed simples.</b> <br> ipsum, dolor sit amet consectetur adipisicing elit. Asperiores officia tenetur distinctio ipsa repellat, cupiditate voluptates et quas provident fuga molestias aliquam ratione itaque nihil sapiente dignissimos fugit saepe pariatur!</p>
+            <p class="tres"><b>Este é uma borda solid na esquerda.</b><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis optio tempore quo consequuntur? Fugiat dolore deleniti eos, optio adipisci maxime obcaecati accusantium minus assumenda sequi laudantium sapiente quaerat ad.</p>
+            <p class="quatro"><b>Este é uma borda mixada com border-style e os 4 parametros.</b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum consequatur deleniti, at ipsum porro tempore rerum debitis minima consequuntur neque, tenetur illum, aspernatur ipsam. Cum ut quae laboriosam alias saepe.</p>
+            <p class="cinco"><b>Este é uma borda solid simples na esquerda com background-color.</b><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, accusantium non ex fuga, a nihil dolores dolorem quas earum explicabo pariatur doloremque ipsa vero debitis ipsam asperiores qui nulla in?</p>
+        </article>
+        <article>
+            <p class="seis"><b>Este é uma borda solid com 5 px de expessura vermelha com border-radius.</b><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nobis. Et ea fugit voluptatibus tempora dolorem ut ad facilis dignissimos veniam quidem perferendis molestiae expedita, corporis est officiis, voluptate ex!</p>
+            <p class="sete"><b>Este é uma borda bottom solid simples  vermelha com background color.</b><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente adipisci quibusdam ipsum porro aut tempore officia numquam, veniam recusandae voluptates magni, ea cumque sequi earum similique pariatur voluptatem iusto rem!</p>
+        </article>
+    </main>
+    <script>
+    </script>
+</body>
+</html>

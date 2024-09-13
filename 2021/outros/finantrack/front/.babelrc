@@ -1,0 +1,10 @@
+{
+  "presets": ["@babel/preset-env"], // Configura o ambiente do babel automatizando para o melhor ambiente de transpilação
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime", {
+        "regenerator": true
+      }
+    ]
+  ]
+}

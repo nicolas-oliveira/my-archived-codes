@@ -1,0 +1,78 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-landing .content-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 80vw;
+
+  height: 100%;
+  max-height: 80vh;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url('../../images/landing-page.svg') no-repeat 80% center;
+  background-size: 65vh;
+}
+
+#page-landing .content-wrapper main {
+  max-width: 350px;
+}
+
+#page-landing .content-wrapper main h1{
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+}
+
+#page-landing .content-wrapper main p {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.content-wrapper .location {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  font-size: 20px;
+  line-height: 27px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.content-wrapper .enter-app {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 80px;
+  height: 80px;
+  background: var(--yellow);
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.3s;
+}
+
+.content-wrapper .enter-app:hover {
+  background: var(--blue-light);
+}

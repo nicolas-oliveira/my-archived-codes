@@ -1,0 +1,13 @@
+main {
+    flex: 1; /* Ocupa todo o espaço disponível restante => após display flex do aside */
+}
+main ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+@media (max-width: 650px){
+    main ul {
+        grid-template-columns: 1fr;
+    }
+}

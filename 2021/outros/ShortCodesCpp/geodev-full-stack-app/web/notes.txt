@@ -1,0 +1,34 @@
+
+3 conceitos do Reacts
+Componente => É uma função que retorna um conteúdo html, css ou js
+              sendo portanto um bloco isolado que não interfere no
+              restante da aplicação => é criado quando se repete 
+              uma parte da aplicação
+
+Propriedades => São como os atributos passados nas tags HTML <Header title=""/>
+                Informações que um componente pai passa para o componente FILHO
+
+<></> fragmentos para indicar um container porém sem identificação no DevTools
+Estado => Uma informação que o componente irá manipular sendo mantidas pelos 
+          componentes
+Conceito de imutabilidade => nunca irá alterar um dado e sim criar apartir de um anterior
+
+Criação de uma função que incrementa em React
+import React, { useState } from 'react';
+// import Header from './Header'; 
+function App() {
+  const [counter, setCounter] = useState(0); // Criação de um estado que começa por 0
+  // Desestruturação do vetor useState => Uma variável + um função que irá atualizar ela
+  
+  function incrementCounter() {
+    setCounter(counter + 1);
+  }
+  return (
+    <>
+    <h1>Quantidade de likes: {counter}</h1>
+    <button onClick={incrementCounter}>Like</button>
+    </>
+  );
+}
+
+export default App;

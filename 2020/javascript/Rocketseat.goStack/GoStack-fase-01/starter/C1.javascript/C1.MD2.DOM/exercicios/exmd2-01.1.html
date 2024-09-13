@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Curso javascript</title>
+    </head>
+    <body>
+        <div id"app">
+            <button id="putElement" onclick='putText()'>Aperte</button>
+            <div class="inside"></div>
+        </div>
+        <script>
+
+            function putText() {
+                var paragraph = document.createElement('p');
+                paragraph.innerText = ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam rem eligendi repudiandae laboriosam aliquid illo odit atque enim voluptatibus itaque quo, porro facilis ea vel tempora aliquam unde reiciendis perferendis.'
+                document.body.appendChild(paragraph);
+            }
+        </script>
+    </body>
+</html>

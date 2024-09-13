@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(#051a5d,#aa359a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a {
+    font-family: sans-serif;
+}
+.box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18rem;
+    margin-bottom: 20rem;
+}
+.boxintern {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.whitebox {
+    padding: 20px 20px 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+button, input[type=submit] {
+    padding: 7px;
+    border-radius: 10px;
+    border-style: none;
+    width: 50%;
+    margin: 8px 0;
+    background-color: rgba(23, 64, 197, 0.9);
+    color: white;
+}
+button:hover, input[type=submit]:hover {
+    cursor: pointer;
+    outline: none;
+    background-color: rgba(23, 64, 197, 0.5);
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(23, 64, 197, 0.5);
+}
+a {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+    margin: 8px 0;
+    background-color: rgba(23, 64, 197, 0.9);
+    color: white;    
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    background-color: rgba(23, 64, 197, 0.5);
+}
+
+.icon {
+    color: white;
+}
+.user {
+    position: relative;
+}
+.user .fa-user {
+    position: absolute;
+/*     display: flex;
+    flex-direction: column; */
+    bottom: 20px;
+    left: 10px;
+}
+.password {
+    position: relative;
+}
+.password .fa-key {
+    position: absolute;
+/*     display: flex;
+    flex-direction: column; */
+    bottom: 20px;
+    left: 10px;
+}

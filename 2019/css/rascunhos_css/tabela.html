@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta chaset="uft-8">
+    <title>Tabelas</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+        table caption {
+            color: blue;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px;
+        }
+        tr.cinza-escuro {
+            background-color: #909090
+        }
+
+        tr.cinza-claro {
+            background-color: #e0e0e0
+        }
+        td, th {
+            border: 1px solid black;
+            text-align:center;
+            vertical-align: middle;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inserindo tabelas com HTML5</h1>
+    
+    <table>
+            <caption>Alunos de desenvolvimento WEB</caption>
+        <tr class="cinza-claro">
+            <th>Classificação</th><th>Nome do aluno</th><th>Quantidade</th>
+        </tr>
+
+        <tr class="cinza-escuro"><td rowspan="4">Letra A</td><td>Alex</td><td rowspan="4">4</td></tr>
+            <tr class="cinza-escuro"><td>Alexandra</td></tr>
+            <tr class="cinza-escuro"><td>Antonio</td></tr>
+            <tr class="cinza-escuro"><td>André</td></tr>
+        
+        <tr class="cinza-claro"><td>Letra B</td><td>Bianca</td><td>1</td></tr>
+
+        <tr class="cinza-escuro"><td rowspan="5">Letra C</td><td>Caetano</td><td rowspan="5">5</td></tr>
+        <tr class="cinza-escuro"><td>Caique</td></tr>
+        <tr class="cinza-escuro"><td>Carlos</td></tr>
+        <tr class="cinza-escuro"><td>Christopher</td></tr>
+        <tr class="cinza-escuro"><td>Cristian</td></tr>
+    </table>
+</body>
+
+</html>

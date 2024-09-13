@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 4</title>
+    <style>
+    body {
+        background-color: #000;
+        background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(102, 126, 234,1)  100%,rgba(118, 75, 162,1) 35%);
+    }
+    div#box{
+        background: blanchedalmond;
+        position: absolute;
+        text-align: center;
+        padding: 50px;
+        border: 10px solid rgba(7, 7, 121, 0.445);
+        width: 500px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    label {
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Exercício 5</h1>
+        <label><strong>Número tabuada: </strong></label>
+        <input type="number" placeholder="Digite aqui" id="numero"><br><br>
+        <input type="button" value="Confirmar" onclick="tabuada()"><br><br>
+        <label class="show_result" ></label><br><br>
+         <section>
+            <div id="tabuada_div">
+                <select size="10" id="tag_select"></select>
+                <option></option>
+            </div>
+         </section>
+        <br>
+    </div>
+    <script src="exercicio5.js"></script>
+</body>
+</html>

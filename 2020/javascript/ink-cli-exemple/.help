@@ -1,0 +1,298 @@
+[ __    __  ________  __        _______          ______       ______  
+|  \  |  \|        \|  \      |       \        /      \     /      \ 
+| $$  | $$| $$$$$$$$| $$      | $$$$$$$\      |  $$$$$$\   |  $$$$$$\
+| $$__| $$| $$__    | $$      | $$__/ $$       \$$__| $$   | $$$\| $$
+| $$    $$| $$  \   | $$      | $$    $$       /      $$   | $$$$\ $$
+| $$$$$$$$| $$$$$   | $$      | $$$$$$$       |  $$$$$$    | $$\$$\$$
+| $$  | $$| $$_____ | $$_____ | $$            | $$_____  __| $$_\$$$$
+| $$  | $$| $$     \| $$     \| $$            | $$     \|  \\$$  \$$$
+ \$$   \$$ \$$$$$$$$ \$$$$$$$$ \$$             \$$$$$$$$ \$$ \$$$$$$ 
+                                                                     
+                                                                     
+     **Este é um manual de pesquisa rápida para o terminal linux**
+                                                               
+ ┌───────────────────────────|Básico|───────────────────────────────┐
+ │                                                                  │
+ │                                                                  │
+ │           help = Comando de ajuda (Este aqui)                    │
+ │           helpgit = Comandos do git                              │
+ │           	Atalhos do help:                                    │
+ │           / = Pesquisa e mostra o posterior                      │
+ │           ? = Pesquisa e mostra o anterior                       │
+ │	     bashrc = Edita os atalhos aliases                      │
+ │           Shift + T = Nova aba                                   │
+ │           Ctrl + U = Apaga a linha no Começo                     │
+ │           Ctrl + A = Começo da linha                             │
+ │           man = Guru do Linux                                    │
+ │           manjaro = Mostra a versão do manjaro                   │
+ │                                                                  │
+ │                                                                  │
+ └──────────────────────────────────────────────────────────────────┘
+ ┌───────────────────────────────| ARQUIVOS |──────────────────────────────────────────┐
+ │                                                                                     │
+ │ cd = Muda de pasta *Para acessar com espaço coloque '?' entre os espaços            │
+ │ pwd = Mostra o dir atual                                                            │
+ │ ls = Mostra conteúdo do dir atual                                                   │
+ │ lsd = Mostra Sub pastas do dir atual (alias ls -d */)                               │
+ │ lsn 'nome'* = Mostra arquivos com o inicio da palavra esp (alias ls -d 'n'*)        │
+ │ ls *'.exe' = Mostra apenas as extenções necessárias                                 │
+ │ cat = Mostra o conteúdo do arquivo                                                  │
+ │ touch = Cria um arquivo                                                             │
+ │ mkdir = Cria um diretório                                                           │
+ │ rmdir = Remove dir vazio                                                            │
+ │ rm = Apaga um arquivo                                                               │
+ │ rm -r = Apaga todo conteúdo de um dir e o dir                                       │
+ │ cp </pasta/nome> </pasta/novonome> = Copia um arquivo pra outro lugar               │
+ │ mv <nome> <novonome> = Muda o nome do arquivo caso esteja na mesma pasta            │
+ │                                                                                     │
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+ 
+ ┌─────────────────────────────| FERRAMENTAS |─────────────────────────────────────────┐
+ │                                                                                     │
+ │ exiftool = Metadados de imagens                                                     │
+ │ exiftool -filename -gpslatitude -gpslongitude -T -n DIR > out.txt                   │
+ │ *Extrai todas as informações para um txt em decimal*                                │
+ │ nmap = Mapeador de redes                                                            │
+ │ nmap -A = Agressivo                                                                 │
+ │ nmap -sS =                                                                          │
+ │ nmap -sU = Rastreia protocolos UDP abertos                                          │
+ │ nmap -T4 = Tempo de espera alto                                                     │
+ │ nmap -T5 = Tempos de espera muito alto                                              │
+ │ nmap -O = Especifica sistema operacional                                            │
+ │ pwsh = Acessa o powershell da Microsoft                                             │
+ │ python = Acessa a IDE python                                                        │
+ │ rmlint = Procura por arquivos repetidos e cria um script que remove-os              │
+ │                                                                                     │
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+                           
+ ┌──────────────────────────────| PROCESSOS |──────────────────────────────────────────┐
+ │                                                                                     │
+ │ htop = Processos do Sistema                                                         │
+ │ ps aux = PID dos processos do sistema em ordem de tempo                             │ 
+ │ kill -9 <PID>  = Mata um programa com um nivel de prioridade                        │ 
+ │ pkill <nomedoprograma> = Mata o programa específico e seus processos                │ 
+ │ killall+'PID' = Mata um processo específico à força                                 │
+ │ ps aux | grep node = Procura por processos do node                                  │
+ │ kill -9 PID = Mata um processo correspondente ao pin                                │
+ │                                                                                     │
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+                     
+ ┌───────────────────────| INFORMAÇÕES DO SISTEMA |────────────────────────────────────┐
+ │                                                                                     │
+ │ sensors = Mostra a temperatura do sistema                                           │
+ │ lspci = Mostra todos os barramentos do pc                                           │
+ │ lsusb = Barramentos de USB do pc                                                    │
+ │ neofecth = Exibe informações básicas do sistema e distro                            │
+ │ lscpu = Informações completa do CPU                                                 │
+ │ lshw = Informações completas do hardware                                            │
+ │ inxi = Informações básicas de sistema (CPU, Kernel, Mem..)                          │
+ │ inxi -i = Informações Network                                                       │
+ │ inxi -A = informações das placas de som/áudio do computador);                       │
+ │ inxi -C = informações gerais apenas do CPU);                                        │
+ │ inxi -f = informações básicas do CPU e das flags que ele suporta);                  │
+ │ inxi -D = informações completas de armazenamento dos SSDs/HDDs, etc);               │
+ │ inxi -n = informações sobre a placa de rede, incluindo o mac);                      │
+ │ inxi -G = informações sobre a placa de vídeo);                                      │
+ │ inxi -l = informações sobre a tabela de partições).                                 │
+ │ last reboot | less = Mostra todos os reboot do sistema                              │
+ │ systemd-analyze = Analiza tempo de boot                                             │
+ │ systemd-analyze blame = Analiza o tempo de setagem de cada driver do kernel         │
+ │                                                                                     │
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+                       
+ ┌───────────────────────| WIFI e INTERNET |───────────────────────────────────────────┐
+ │                                                                                     │
+ │ systemctl list-unit-files | grep --ignore-case net = Mostra os modulos do systemctl │
+ │ lswifi = Mostra o modulo de wifi                                                    │
+ │ nmtui = configura pelo terminal o wifi                                              │
+ │                                                                                     │
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+
+ ┌────────────────────────────| PACOTES |────────────────────────────────────────────────────┐
+ │                                                                                           │
+ │ pacman -S <pacote> = Instala pacote especificado                                          │
+ │ pacman -Syu = Instala e atualiza todo sistema                                             │
+ │ pacman -U <pacote baixado na pasta> = Instala pelo arquivo                                │
+ │ pamac = Instala através do pamac                                                          │
+ │ pacman -Q = lista os pacotes instalados                                                   │
+ │ sudo pacman-mirrors --fasttrack = Melhores mirrors                                        │
+ │ sudo pacman-mirrors -f 5 = 5 melhores mirrors                                             │
+ │ sudo pacman-mirrors --api --set-branch stable = Seta as packages stables do manjaro       │
+ │ sudo pacman-mirrors --api --set-branch testing = Seta as pckg após passar pelo unstable   │
+ │ sudo pacman-mirrors --api --set-branch unstable = Seta as pckg após 3 dias do Arch        │
+ │ sudo pacman-mirrors -g && sudo pacman -Syyu = Apos mudar o branch faça isso               │
+ │ sudo pacman -Sc = Limpa todos os pacotes não utilizados do cache                          │
+ │                                                                                           │
+ │------- Key problems -----                                                                 │
+ │ sudo pacman -Sy archlinux-keyring manjaro-keyring                                         │
+ │ sudo pacman-key --populate archlinux manjaro                                              │
+ │ sudo pacman-key --refresh-keys                                                            │
+ │                                                                                           │
+ │ Problem when turn back to stable:                                                         │
+ │ sudo rm -r /var/cache/pacman/pkg = Delete the corrupt keys                                │
+ │                                                                                           │
+ │-------------------------                                                                  │
+ │ sudo rm /var/lib/pacman/db.lck = Em caso de erro na atualização                           │
+ │ sudo ls /var/cache/pacman/pkg/ | wc -l = Mostra pacotes em cache                          │
+ │ *cachels = Atalho desse comando anterior                                                  │
+ │ du -sh /var/cache/pacman/pkg/ = Mostra o tamanho do cache                                 │
+ │ *cachesize = Atalho do comando anterior                                                   │
+ │ sudo paccache -r = Limpa todos os caches menos os 3 mais recentes                         │
+ │ sudo paccache -ruk0 = Limpa todos os pacotes desinstalados                                │
+ │ ncdu = Mostra os arquivos grandes                                                         │
+ │ sudo pacman -Rns $(pacman -Qtdq) = Remove todos os pacotes órfãos                         │
+ │------------------------                                                                   │
+ │ Recuperar pacotes antigos: https://archive.archlinux.org/packages/                        │
+ │                                                                                           │
+ └───────────────────────────────────────────────────────────────────────────────────────────┘
+
+ ┌────────────────────────────| COMPACTAÇÃO |────────────────────────────────────────────────┐
+ │ tar = Compacta e descompacta arquivos (taz e taz.gz)                                      │
+ │ tar -xzvf = Descompacta .tar.gz                                                           │
+ │ tar -czvf = Compacta em .tar.gz                                                           │
+ │ zip = Compacta arquivos para .zip                                                         │
+ │ rar = Compacta arquivos para .rar                                                         │
+ │ unzip = Descompacta arquivos .zip                                                         │
+ │ unrar = Descompacta arquivos .rar                                                         │
+ └───────────────────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────| PERMISSÕES |───────────────────────────────────────────────────┐
+│                                                                                             │
+│     ┌──────────┬───────────┬───────────────┬─────────────────────┐                          │
+│     │ Read (r) │ Write (w) │ Execution (x) │---------------------│                          │
+│     │   4      │     2     │      1        │  0 =  Sem permissão │                          │
+│     └──────────┴───────────┴───────────────┴─────────────────────┘                          │
+│     ┌───────────────────────────────┐                                                       |
+│     │ Permissão   Binário   Decimal │                                                       │
+│     │ ---         000       0       │                                                       │
+│     │ --x         001       1       │                                                       │
+│     │ -w-         010       2       │                                                       │
+│     │ -wx         011       3       │                                                       │
+│     │ r--         100       4       │                                                       │
+│     │ r-x         101       5       │                                                       │
+│     │ rw-         110       6       │                                                       │
+│     │ rwx         111       7       │                                                       │
+│     └───────────────────────────────┘                                                       │
+│     │DONO │GRUPO│OUTROS│                                                                    │
+│     │...  │ ... │ ...  │                                                                    │
+│                                                                                             │
+│ chmod	000  ----------   Nenhuma                                                             │
+│ chmod	400  -r--------   Leit. apenas para o dono                                            │
+│ chmod	444  -r--r--r--   Leit. para o dono, grupo e outros                                   │
+│ chmod	600  -rw-------   Leit./grav. apenas para o dono                                      │
+│ chmod	620  -rw--w----   Leit./grav. p/ o dono, grav. para o grupo                           │
+│ chmod	640  -rw-r-----   Leit./grav. p/ o dono, e leitura para o grupo                       │
+│ chmod	644  -rw-r--r--   Leit./grav. p/ o dono, leit. p/ o grupo e  p/ os outros             │
+│ chmod	645  -rw-r--r-x   Leit./grav. p/ o dono, leit. p/ o grupo e leit./exec. p/ outros     │
+│ chmod	646  -rw-r--rw-   Leit./grav. p/ o dono, leit. p/ o grupo e leit./grav. p/ outros     │
+│ chmod	650  -rw-r-x---   Leit./grav. p/ o dono e leit. e exec. p/ o grupo                    │
+│ chmod	660  -rw-rw----   Leit./grav. p/ o dono e leit. e grav. p/ o grupo                    │
+│ chmod	661  -rw-rw---x   Leit./grav. p/ o dono, leit. e grav. p/ o grupo e exec. pq outros   │
+│ chmod	662  -rw-rw--w-   Leit./grav. p/ o dono, leit. e grav. p/ o grupo e grav. p/ outros   │
+│ chmod	663  -rw-rw--w-x  Leit./grav. p/ o dono, leit. e grav. p/ o grp e leit./exec. p/ outro│
+│ chmod	664  -rw-rw-r--   Leit./grav. p/ o dono, leit. e grav. p/ o grupo e leit. p/ outros   │
+│ chmod	700  -rwx------   Leit./grav./exec. p/ o dono e nada para os demais                   │
+│ chmod	770  -rwxrwx---   Leit./grav./exec. p/ o dono, leit./grav./exec. p/ o grp e 0 p/ outro│
+│ chmod	777  -rwxrwxrwx   Perm. total para dono, grupo e outros                               │
+│                                                                                             │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────| NODE BACKEND |──────────────────────────────────────────┐
+│┌───────────────────────────────────────────────────────────────────────────────────────┐ │
+││                           STACK de Desenvolvimento!                                   │ │
+││                           ─────────────────────────                                   │ │   
+││   YARN/NPM                                                                            │ │ 
+││         └─EXPRESS                                                                     │ │ 
+││                └─NODEMON                                                              │ │
+││        		 └─MONGOOSE   => Mongo.D                                         │ │ 
+││                               └─AXIOS                                                 │ │
+││ 				     └─CORS   => Aplicação React                         │ │
+││                                       └─socket.io  => Protocolo WebSocket back->front │ │
+│└───────────────────────────────────────────────────────────────────────────────────────┘ │
+│ yarn init -y = Inicializa o repositorio                                                  │ 
+│ npm init -y  = Inicializa o repositorio                                                  │ 
+│ code . = Abre o VScode na pasta que está o terminal                                      │ 
+│          > install code command - CTRL + SHIFT + P in VSCODE                             │ 
+│ yarn add <nome> = Instala o pacote                                                       │ 
+│ npm intall <nome> = Instala o pacote                                                     │ 
+│ node <nome>.js = Executa o script.js                                                     │ 
+│ babel ./<nome>.js -o ./bundle.js -w = Script for Babel/Bundle                            │ 
+│ http://www.portquiz.net:27017 => Verifica se está com porta bloqueada                    │ 
+│                                                                                          │ 
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+ ┌────────────────────────────| REACT FRONTEND |───────────────────────────────────────┐
+ │                                                                                     │  
+ │   STACK de Desenvolvimento!                                                         │ 
+ │    yarn/npm                                                                         │ 
+ │ 	  └─AXIOS                                                                      │ 
+ │                                                                                     │ 
+ │  npx create-react-app <nome> = Cria o projeto                                       │ 
+ │  yarn create react-app <nome> = Cria o projeto                                      │ 
+ │  npm start = Inicializa o React/ReactNative                                         │ 
+ │  yarn start = Inicializa o React/ReactNative                                        │ 
+ │  npm run <script> => Roda o script criado no package.json                           │ 
+ │  yarn <script> => Roda o script criado no package.json                              │ 
+ │  npm install -g expo-cli => Torna o expo global no sistema                          │ 
+ │  expo init <nome> => Inicializa o projeto (Template blank)                          │ 
+ └─────────────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────| OUTROS |────────────────────────────────────────────────┐
+  
+  sudo dmidecode -t 2 = Mostra informações da placa mãe
+  alsamixer = Comando de configurações de volume de audio
+  amixer -c 0 set Master 110% = Altera para 100%
+  xprop = Ao clicar mostra as configurações de inicialização do desktop
+  date = Mostra a data do sistema
+  which <nome do programa> = Mostra onde esta instalado 
+ -----------------------------------------------------
+  matrix = Efeito da matrix no terminal
+ --------------------------------------
+  jailson = Surpresinha
+ --------------------------
+  galocego = Surpresinha 2
+ 
+ Caso o timer/ cronometro quebre na atualização
+ 
+ /usr/share/plasma/plasmoids/org.kde.plasma.timer/
+ 
+ ------------------------
+ 
+ Sudo pacman -Syu //Base de dados erro
+ sudo rm /var/lib/pacman/db.lck 
+
+ Deu pau nervoso no whatsapp nativefier = rm -r ~/.config/whats-app-nativefier-d52542/
+
+ Saber se uma rede tem uma porta bloqueada http://portquiz.net:porta
+ 
+ Background da splash screen
+ /usr/share/plasma/look-and-feel/org.kde.breath.desktop/contents/components/artwork/
+
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────| Aliases |───────────────────────────────────────────────┐
+                   **Copie e cole na pasta /home/nome/.bashrc**
+
+  alias matrix='cmatrix'
+  alias neofetch='neofetch | lolcat'
+  alias hosts='sudo nano /etc/hosts'
+  alias lsd='ls -d */'
+  alias lsn='ls -d'
+  alias bashrc='sudo nano /home/nicolas/.bashrc'
+  alias help='more /home/nicolas/.help'
+  alias ascii='more /home/nicolas/.ascii.txt'
+  alias cachels="sudo ls /var/cache/pacman/pkg/ | wc -l"
+  alias cachesize="du -sh /var/cache/pacman/pkg/"
+  alias helpgit="more /home/nicolas/./.helpgit"
+  alias manjaro="cat /etc/lsb-release"
+  alias lswifi="hwinfo --netcard --wlan --bluetooth | grep -Ei 'model\:|driver\:|status\:|cmd\:|file\:|detected\:' | grep -v 'Config Status'"
+  
+
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+
+ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+ 
+     Help 2.0  Copyright (C) 2020  Nicolas Oliveira
+     License GPLv3+: GNU GPL version 3  or later <https://gnu.org/licenses/gpl.html>.
+     This  is  free software: you are free to change and redistribute it.  There is NO WAR‐
+     RANTY, to the extent permitted by law.
+ 
+ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 
+ 
+

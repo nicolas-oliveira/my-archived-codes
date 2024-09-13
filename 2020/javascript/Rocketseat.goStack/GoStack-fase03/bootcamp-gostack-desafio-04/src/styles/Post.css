@@ -1,0 +1,27 @@
+.post {
+  min-height: 20vh;
+  padding: 20px;
+  margin: 2em 0;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.143916);
+}
+.post .content .content-self {
+  margin: 15px 0;
+  line-height: 20px;
+}
+.post .content .avatar {
+  display: flex;
+  align-items: center;
+  line-height: 1.34em;
+}
+.post #avatar {
+  border-radius: 50%;
+  width: 32px;
+  margin-right: 0.5em;
+  align-self: center;
+}
+.post p {
+  font-size: 14px;
+  color: #3E3E3E;
+}

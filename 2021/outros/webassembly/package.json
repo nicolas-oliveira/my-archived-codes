@@ -1,0 +1,10 @@
+{
+  "name": "webassembly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "assemblyscript": "^0.18.26",
+    "http-server": "^0.12.3"
+  }
+}

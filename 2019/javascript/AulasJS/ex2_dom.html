@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 name="fundo">Iniciando os estudos com DOM</h1>
+	<p class="cor">Aqui vai o resultado</p>
+	<p>Aprendendo a usar o DOM com javascript</p>
+	<div id="msg">Clique aqui</div>
+	<script>
+	//acessar um elemento por tag
+		var p1 = document.getElementsByTagName('p')[0];
+		var p2 = document.getElementsByTagName('p')[1];
+		p1.style.color = 'red';
+		document.write(p2.innerHTML);
+		//acessar um elemento por ID
+		var mensagem = document.getElementById('msg');
+		mensagem.innerHTML = 'Estou <b>aguardando</b>...';
+		//acessar um elemento por nome e class
+		var f = document.getElementsByName('fundo')[0]
+		var c = document.getElementsByClassName('cor')[0]
+		f.style.background = 'yellow';
+		c.style.background = 'blue';
+		//acessar um elemento por queryselector
+		p1 = document.querySelector('p.cor');
+		mensagem = document.querySelector('div#msg');
+		p1.style.background = 'green';
+		mensagem.style.background = 'orange';
+	</script>
+</body>
+</html>

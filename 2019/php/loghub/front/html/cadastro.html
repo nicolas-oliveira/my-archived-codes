@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/login/front/css/style.css">
+   
+    <title>Página de login</title>
+</head>
+<body>
+    <div class="box">
+        <div class="boxintern">
+            <div class="whitebox">
+                <h1>Cadastro simples</h1><br>
+                <form method="post">
+                    <fieldset id="usuario" >
+                        <legend>Identificação de Usuário</legend>
+                    <p><strong><label for="cNome">Usuario:</label></strong>
+                        <input type="text" name="tUser" id="cUser" size="20" maxlength="40" placeholder="Usuário"/></p>
+                    <p><strong><label for="cSenha">Senha:</label></strong>
+                        <input type="password" name="tSenha" id="cSenha" placeholder="8 digitos"/></p>
+                    <p><strong><label for="cEmail">E-mail:</label></strong>
+                        <input type="email" name="tEmail" id="cEmail"/></p>
+                    <fieldset>
+                        <legend>Sexo</legend>
+                            <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label>
+                            <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label></fieldset>
+                    <p><label for="cData"/>Data de nascimento:<input type="date" name="tData" id="cData"/></p>
+                    <input type="submit" value="Cadastrar">
+                </form>
+                <a href="login.html">Voltar</a>
+
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>

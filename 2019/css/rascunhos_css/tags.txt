@@ -1,0 +1,32 @@
+<span>Delimita parte do texto</span>
+
+<del>Texto riscado</del>
+Texto sublinhado
+<i>Texto em itálico</i>
+
+<em>Texto riscado com ênfase</em>
+
+<sub>Subscrito</sub>
+
+<sup>Levanta a fonte</sup>
+
+<strong>Negrito</strong>
+
+<b>Negrito</b>
+
+<!--Comentário-->
+
+<code> Fonte de codigo</code>
+
+<pre> Texto pré formatado </pre>
+<sub> Abaixa a fonte</sub>
+&lt; <
+
+&gt; >
+
+<br>
+
+&nbsp; Espaço em branco
+
+<p style="text-align: center"> </p>
+

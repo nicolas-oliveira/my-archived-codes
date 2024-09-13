@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./src/_modules/chart.min.js"></script>
+  <title>Sprint de Desempenho</title>
+</head>
+<body>
+    <div class="header">
+      <h1>Sprints de Desempenho ♻️</h1>
+    </div>
+    <div class="app">
+      <div class="content">
+        <div class="box">
+          <div class="tabs"></div>
+          <canvas id="sprintCharts" height="100vh"></canvas>
+          <canvas id="gainCharts" height="100vh" style="display: none;"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="./src/lib/colors.js"></script>
+    <script src="./src/components/tabs.js"></script>
+    <script src="./src/lib/sprints.js"></script>
+    <script src="./src/lib/data.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>

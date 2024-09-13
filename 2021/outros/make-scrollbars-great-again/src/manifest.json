@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Make scrollbar great again",
+  "description": "Thinner and better scroll bar for Google Chrome and Chromium",
+  "version": "1.0",
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "/ui/popup.html"
+  },
+  "permissions": [
+    "fontSettings",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "css": [
+      "inject/OverlayScrollbars.min.css"
+    ],
+    "js": [
+      "inject/OverlayScrollbars.min.js",
+      "index.js"
+    ],
+    "run_at": "document_start",
+    "all_frames": true,
+    "match_about_blank": true
+  }]
+}

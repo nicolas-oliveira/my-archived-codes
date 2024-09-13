@@ -1,0 +1,17 @@
+{
+  "curl": "",
+  "httpie": "",
+  "ifconfig": "",
+  "iw": "",
+  "iwconfig": "",
+  "lsof": "",
+  "ngrep": "",
+  "nmap": "",
+  "ping": "",
+  "route": "",
+  "ssl": "",
+  "tc": "",
+  "tcpdump": "",
+  "wget": "",
+  "wireshark": ""
+}

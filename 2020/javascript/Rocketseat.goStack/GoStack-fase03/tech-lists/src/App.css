@@ -1,0 +1,49 @@
+body, * {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background: #be2a23;
+  color: #fff;
+  padding: 20px;
+  line-height: 1em;
+}
+
+li {
+  padding-bottom: 0.5em;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #8a1e18;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #92241e;
+}
+
+input {
+  padding: 10px;
+  border: none;
+}
+
+.remove {
+  padding: 2px 5px;
+  color: #fff;
+  background-color: #8a1e18;
+}
+
+.remove:hover {
+  cursor: pointer;
+  background-color: #92241e;
+}

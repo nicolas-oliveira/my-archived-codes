@@ -1,0 +1,12 @@
+{
+  "name": "reminderme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "import-jsx": "^4.0.1",
+    "ink": "^3.0.0-7",
+    "ink-table": "^3.0.0",
+    "react": "^18.2.0"
+  }
+}

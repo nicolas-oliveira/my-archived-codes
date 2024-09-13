@@ -1,0 +1,202 @@
+
+////////////////TOP NAV BAR////////////////
+
+.top-bar{background-color:black;min-height:40px;padding-top:5px;padding-bottom: 0px;}
+.top-bar .nav-text {
+    color: #00BCD4;
+    display: block;
+    margin-top: 5px;
+}
+.top-bar .social{color:#FFF;display:inline-block;padding:5px;text-decoration: none;}
+
+.top-bar .tools{margin:0px;padding:0px;list-style-type:none;}
+.top-bar .tools li{list-style-type: none;display:inline-block;}
+.top-bar .tools li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.navbar-brand {
+     float: left;
+    height: 50px;
+    padding: 3px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    position: absolute;
+    z-index: 11;
+    margin: 0 auto;
+    right: 42%;
+}
+
+
+.navbar-inverse {
+    background-color: #009688;
+    border-color: #080808;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 0px solid #000;;
+    border-radius:0px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 15px 11px;}
+
+.form-control{
+    border-color:#fff;
+    border-radius:0px;
+    background-color:transparent;
+}
+
+.btn-default-1 {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    border-radius: 0px;
+}
+
+.cart-heart a{display:inline-block;color:#fff;font-size:20px;padding:5px;}
+
+/* CROUSELE START/////////////////////////// */
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 35px;
+    width: 60%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+@media screen and (min-width:768px){
+    .carousel-caption h3{font-size: 52px;} 
+    .carousel-caption p{font-size: 32px;} 
+    .carousel-caption{padding-bottom:160px;}
+}
+
+
+/*FOOTER START///////////////////*/
+/* height: 100%;
+} */
+.page-container {
+  position: relative;
+  min-height: 30vh;
+  max-width: 100%;      
+}
+.content-wrap {
+
+  padding-bottom: 0; 
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 25px 0 20px 0;
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+.footer hr {
+
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #ccc;
+  margin: 1em 0; 
+  padding: 0; 
+}
+.footer .social-icon{padding:0px;margin:0px;}
+.footer .social-icon a{display:inline-block;color:#fff;font-size:25px;padding:5px;}
+.footer .acount-icon a{display:block;color:#fff;font-size:18px;padding:5px;text-decoration:none;}
+.footer .acount-icon .fa{margin-right:25px;}
+
+.footer {
+
+  padding: 50px 0 20px 0;
+  background-color: rgb(44, 44, 44);
+  color: #a0a5ad;
+}
+.footer .title{text-align: left;color:#fff;font-size:25px;}
+
+
+.footer .social-icon{padding:0px;margin:0px;}
+.footer .social-icon a{display:inline-block;color:#fff;font-size:25px;padding:5px;}
+.footer .acount-icon a{display:block;color:#fff;font-size:18px;padding:5px;text-decoration:none;}
+.footer .acount-icon .fa{margin-right:25px;}
+
+
+.footer .category a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 1px;
+  border-radius:4px;
+  margin-top: 6px;
+  background-color: black;
+  border: solid 1px #fff;
+}
+
+.footer .payment{margin:0px;padding:0px;list-style-type:none}
+.footer .payment li{list-style-type:none}
+.footer .payment li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px 10px;
+}
+
+.button-ingresso {
+    border-radius: 5px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 30px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button-ingresso span#ingresso {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-ingresso span#ingresso:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-ingresso:hover span#ingresso {
+    padding-right: 25px;
+  }
+  
+  .button-ingresso:hover span#ingresso:after {
+    opacity: 1;
+    right: 0;
+  }

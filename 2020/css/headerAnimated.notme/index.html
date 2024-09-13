@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Kirsty';
+            src: url(/fonts/Kirsty.regular.ttf);
+        }
+        @font-face {
+            font-family: 'Rosmatika';
+            src: url(/fonts/Rosmatika.ttf);
+        }
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    main {
+        flex: 1 0 auto;
+        padding: 250px 20px 20px 20px;
+        
+    }
+    header h1 {
+        font-family: 'Kirsty';
+    }
+    header nav {
+        font-size: 22px;
+        background-color: #00000000;
+        padding: 20px;
+
+    }
+    footer {
+        background-color: #000000c1;
+        color: white;
+        text-align: center;
+        padding: 2px;
+    }
+    .cbp-af-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #1b1b1b;
+	z-index: 10000;
+	height: 200px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+    }
+    .cbp-af-header .cbp-af-inner {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+    }
+    .cbp-af-header h1,
+    .cbp-af-header nav {
+        display: inline-block;
+        position: relative;
+    }
+    .cbp-af-header h1,
+    .cbp-af-header nav a {
+        line-height: 100px;
+    }
+    .cbp-af-header h1 {
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: left;
+    }
+    .cbp-af-header nav {
+        float: right;
+    top: -60px;
+    }
+    .cbp-af-header nav a {
+	color: #aaa;
+	font-weight: 200;
+	margin: 0 0 0 114px;
+    font-size: 1em;
+    }
+
+    .cbp-af-header nav a:hover {
+        color: white;
+    }
+
+    .cbp-af-header h1,
+    .cbp-af-header nav a {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .cbp-af-header.cbp-af-header-shrink {
+	height: 70px;
+    }
+    .cbp-af-header.cbp-af-header-shrink h1,
+    .cbp-af-header.cbp-af-header-shrink nav a {
+    line-height: 50px;
+    }
+
+.cbp-af-header.cbp-af-header-shrink h1 {
+	font-size: 2em;
+}
+@media screen and (max-width: 55em) {
+	
+	.cbp-af-header .cbp-af-inner {
+		width: 100%;
+	}
+
+	.cbp-af-header h1,
+	.cbp-af-header nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+	}
+
+	.cbp-af-header h1,
+	.cbp-af-header nav a {
+		line-height: 115px;
+	}
+
+	.cbp-af-header nav a {
+		margin: 0 10px;
+	}
+
+	.cbp-af-header.cbp-af-header-shrink h1,
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		line-height: 45px;
+	}
+
+	.cbp-af-header.cbp-af-header-shrink h1 {
+		font-size: 2em;
+	}
+
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.cbp-af-header nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.cbp-af-header nav a,
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		line-height: 1;
+	}
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="cbp-af-header">
+            <div class="cbp-af-inner">
+        <h1>Crud</h1>
+        <nav>
+                <a href="#">Create</a>
+                <a href="#">Remove</a>
+                <a href="#">Update</a>
+                <a href="#">Delete</a>
+        </nav>
+    </div>
+</div>
+    </header>
+<main class="container">
+    <div class="center">
+    <button class="btn red" onclick="M.toast({html: 'Evento feito!'})">TOAST!</button>
+    </div>
+    <hr>
+    <div class="row">
+        <h2 class="col s6 center">Title 1</h2>
+        <h2 class="col s6 center">Title 2</h2>
+        <p class="col s6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sint labore reprehenderit ab dolorum illum corrupti sequi iste, fuga excepturi accusamus eos soluta tempora adipisci laboriosam exercitationem magnam quaerat nemo.</p>
+        <p class="col s6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aperiam repudiandae numquam totam. Dolor harum voluptate alias neque maiores nesciunt autem architecto voluptates itaque repudiandae, adipisci, culpa sapiente. Neque, officiis.</p>
+    </div>
+    <hr>
+    <div class="row">
+            <h2 class="col s6 center">Title 1</h2>
+            <h2 class="col s6 center">Title 2</h2>
+            <p class="col s6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sint labore reprehenderit ab dolorum illum corrupti sequi iste, fuga excepturi accusamus eos soluta tempora adipisci laboriosam exercitationem magnam quaerat nemo.</p>
+            <p class="col s6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aperiam repudiandae numquam totam. Dolor harum voluptate alias neque maiores nesciunt autem architecto voluptates itaque repudiandae, adipisci, culpa sapiente. Neque, officiis.</p>
+        </div>
+        <hr>
+        <div class="row">
+                <h2 class="col s6 center">Title 1</h2>
+                <h2 class="col s6 center">Title 2</h2>
+                <p class="col s6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sint labore reprehenderit ab dolorum illum corrupti sequi iste, fuga excepturi accusamus eos soluta tempora adipisci laboriosam exercitationem magnam quaerat nemo.</p>
+                <p class="col s6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aperiam repudiandae numquam totam. Dolor harum voluptate alias neque maiores nesciunt autem architecto voluptates itaque repudiandae, adipisci, culpa sapiente. Neque, officiis.</p>
+            </div>
+            <hr>
+            <div class="row">
+                    <h2 class="col s6 center">Title 1</h2>
+                    <h2 class="col s6 center">Title 2</h2>
+                    <p class="col s6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sint labore reprehenderit ab dolorum illum corrupti sequi iste, fuga excepturi accusamus eos soluta tempora adipisci laboriosam exercitationem magnam quaerat nemo.</p>
+                    <p class="col s6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum aperiam repudiandae numquam totam. Dolor harum voluptate alias neque maiores nesciunt autem architecto voluptates itaque repudiandae, adipisci, culpa sapiente. Neque, officiis.</p>
+                </div>
+                <hr>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <p>&copy; Nicolas Oliveira</p>
+        </div>
+    </div>
+    
+</footer>    
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/classie.js"></script>
+		<script src="js/cbpAnimatedHeader.min.js"></script>
+</body>
+</html>

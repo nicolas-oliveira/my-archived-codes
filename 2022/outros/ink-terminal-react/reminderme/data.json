@@ -1,0 +1,24 @@
+{
+  "commands": [
+      {"name": "curl", "tags": ["http","protocolo"], "description": "curl is a tool to transfer data from or to a server"},
+      {"name": "httpie", "tags": ["network","redes","http","protocolo"], "description": "cURL-like tool for humans"},
+      {"name": "ifconfig", "tags": ["redes","network"], "description": "configura uma interface de rede"},
+      {"name": "ipcalc", "tags": ["redes", "network"], "description": "An IPv4 Netmask/broadcast/etc calculator"},
+      {"name": "iptables", "tags": ["redes", "network"], "description": " administration tool for IPv4/IPv6 packet filtering and NAT"},  
+      {"name": "iw", "tags": ["redes", "network"], "description": "iw - show / manipulate wireless devices and their configuration"},
+      {"name": "iwconfig", "tags": ["redes","network"], "description": "iwconfig - configure a wireless network interface"},
+      {"name": "lsof", "tags": ["portas","port","hack","network","redes"], "description": "list open files"},
+      {"name": "lsusb", "tags": ["sistema","info","hardware"], "description": "Interactively dump and analyze network traffic"},
+      {"name": "lspci", "tags": ["sistema","info","hardware"], "description": ""},
+      {"name": "ngrep", "tags": [], "description": "filter in network layer"},
+      {"name": "nmap", "tags": ["hack","network","redes"], "description": "Ferramenta de exploração de rede e segurança / scanner de portas"},
+      {"name": "ping", "tags": ["redes", "network"], "description": "send ICMP ECHO_REQUEST to network hosts"},
+      {"name": "route", "tags": ["redes","protocolo"], "description": "mostra / manipula a tabela de roteamento IP"},
+      {"name": "ssl", "tags": [""], "description": "ssl - OpenSSL SSL/TLS library"},
+      {"name": "tc", "tags": ["redes"], "description": "show / manipulate traffic control settings"},
+      {"name": "tcpdump", "tags": [], "description": "dump traffic on a network"},
+      {"name": "tshark", "tags": ["hack","network","redes"], "description": "Dump and analyze network traffic by terminal CLI"},
+      {"name": "wget", "tags": [""], "description": "The non-interactive network downloader."},
+      {"name": "wireshark", "tags": ["hack","network","redes"], "description": "Interactively dump and analyze network traffic"}
+  ]
+}

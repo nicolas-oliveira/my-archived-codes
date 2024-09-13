@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grids</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
+    * {
+        margin: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    h1,p {
+        font-family: Helvetica, serif;
+    }
+    body,html {
+        height: 100%;
+    }
+    html {
+        /* overflow-y: hidden; */
+        /* Esconde o scroll */
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .column.w10 {float: left;width: 10%;padding: 10px;} /* Muito pequeno pros grids */
+    .column.w20 {float: left;width: 20%;padding: 10px;} /* Muito pequeno pros grids */
+    .column.w25 {float: left;width: 25%;padding: 10px;}/* Para dividir em 4 por 100% */
+    .column.w30 {float: left;width: 30%;padding: 10px;}
+    .column.w33 {float: left;width: calc(100%/3);padding: 10px;}/* Para dividir em 3 por 100% */
+    .column.w40 {float: left;width: 40%;padding: 10px;}
+    .column.w50 {float: left;width: 50%;padding: 10px;}
+    .column.w60 {float: left;width: 60%;padding: 10px;}
+    .column.w70 {float: left;width: 70%;padding: 10px;}
+    .column.w80 {float: left;width: 80%;padding: 10px;} /* Não tem tamanho para completar */
+    .column.w90 {float: left;width: 90%;padding: 10px;} /* Não tem tamanho para completar */
+
+    .grid-container {display: grid;}
+    .grid-container.col2{grid-template-columns: auto;}
+    .grid-container.col2{grid-template-columns: auto auto;}
+    .grid-container.col3{grid-template-columns: auto auto auto;}
+    .grid-container.col4{grid-template-columns: auto auto auto auto;}
+    .grid-container.col5{grid-template-columns: auto auto auto auto auto;}
+    .grid-container.col6{grid-template-columns: auto auto auto auto auto auto;}
+    .grid-container.col7{grid-template-columns: auto auto auto auto auto auto auto;}
+    .grid-container.col8{grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .grid-container.col9{grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .grid-container.col10{grid-template-columns:auto auto auto auto auto auto auto auto auto auto;}
+
+
+    .grid-item {
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <br>
+    <h1>Colunas completando width 100%</h1>
+    <hr><br>
+    <div class="row">
+        <div class="column w30" style="background-color: #aaa;">
+            <h1>Column 1</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w70" style="background-color: #bbb;">
+            <h1>Column 2</h1>
+            <p>Text</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column w40" style="background-color: #ccc;">    
+            <h1>Column 3</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w60" style="background-color: #ddd;">
+            <h1>Column 4</h1>
+            <p>Text</p>
+        </div>
+    </div>
+    <div class="row">
+            <div class="column w50" style="background-color: #aaa;">
+                <h1>Column 5</h1>
+                <p>Text</p>
+            </div>
+            <div class="column w50" style="background-color: #bbb;">
+                <h1>Column 6</h1>
+                <p>Text</p>
+            </div>
+    </div>
+    <div class="row">
+        <div class="column w60" style="background-color: #ccc;">    
+            <h1>Column 7</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w40" style="background-color: #ddd;">
+            <h1>Column 8</h1>
+            <p>Text</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column w70" style="background-color: #aaa;">
+            <h1>Column 9</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w30" style="background-color: #bbb;">
+            <h1>Column 10</h1>
+            <p>Text</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column w33" style="background-color: #ccc;">    
+            <h1>Column 1</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w33" style="background-color: #ddd;">
+            <h1>Column 2</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w33" style="background-color: #eee;">
+            <h1>Column 3</h1>
+            <p>Text</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column w25" style="background-color: #aaa;">    
+            <h1>Column 1</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w25" style="background-color: #bbb;">
+            <h1>Column 2</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w25" style="background-color: #ccc;">
+            <h1>Column 3</h1>
+            <p>Text</p>
+        </div>
+        <div class="column w25" style="background-color: #ddd;">
+            <h1>Column 4</h1>
+            <p>Text</p>
+        </div>
+    </div>
+
+    <br>
+    <h1>Grid container com display grid</h1>
+    <hr><br>
+    <div class="grid-container col1">
+        <div class="grid-item" style="background-color: #faa;">
+            <h1>1</h1>
+            <p>Text</p>
+        </div>
+    </div>
+    <div class="grid-container col2">
+        <div class="grid-item" style="background-color: #fba;">
+            <h1>1</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fca;">
+            <h1>2</h1>
+            <p>Text</p>
+        </div>
+    </div>
+    <div class="grid-container col3">
+            <div class="grid-item" style="background-color: #daa;">
+                <h1>1</h1>
+                <p>Text</p>
+            </div>
+            <div class="grid-item" style="background-color: #dbb;">
+                <h1>2</h1>
+                <p>Text</p>
+            </div>
+            <div class="grid-item" style="background-color: #dcc;">
+                <h1>3</h1>
+                <p>Text</p>
+            </div>
+    </div>
+    <div class="grid-container col4">
+            <div class="grid-item" style="background-color: #faa;">
+                <h1>1</h1>
+                <p>Text</p>
+            </div>
+            <div class="grid-item" style="background-color: #fbb;">
+                <h1>2</h1>
+                <p>Text</p>
+            </div>
+            <div class="grid-item" style="background-color: #fcc;">
+                <h1>3</h1>
+                <p>Text</p>
+            </div>
+            <div class="grid-item" style="background-color: #fdd;">
+                <h1>4</h1>
+                <p>Text</p>
+            </div>
+    </div>
+    <div class="grid-container col10">
+        <div class="grid-item" style="background-color: #faa;">
+            <h1>1</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fbb;">
+            <h1>2</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fcc;">
+            <h1>3</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fdd;">
+            <h1>4</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #faa;">
+            <h1>5</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fbb;">
+            <h1>6</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fcc;">
+            <h1>7</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fdd;">
+            <h1>8</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #fbb;">
+            <h1>9</h1>
+            <p>Text</p>
+        </div>
+        <div class="grid-item" style="background-color: #faa;">
+            <h1>10</h1>
+            <p>Text</p>
+        </div>
+    </div><br>
+    <div class="grid-container col3">
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>1</h1></div>
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>2</h1></div>
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>3</h1></div>  
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>4</h1></div>
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>5</h1></div>
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>6</h1></div>  
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>7</h1></div>
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>8</h1></div>
+            <div class="grid-item" style="border: 1px solid #000000cc;"><h1>9</h1></div> 
+    </div>
+</body>
+</html>

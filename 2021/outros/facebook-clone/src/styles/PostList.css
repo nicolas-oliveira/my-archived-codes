@@ -1,0 +1,38 @@
+.postList {
+  margin: 3vh 10vw;
+}
+@media (max-width: 600px) {
+  .postList {
+    margin: 3vh 0;
+  }
+}
+@media (min-width: 700px) {
+  .postList {
+    margin: 3vh 10vw;
+  }
+}
+@media (min-width: 800px) {
+  .postList {
+    margin: 3vh 15vw;
+  }
+}
+@media (min-width: 900px) {
+  .postList {
+    margin: 3vh 20vw;
+  }
+}
+@media (min-width: 1000px) {
+  .postList {
+    margin: 3vh 25vw;
+  }
+}
+@media (min-width: 1500px) {
+  .postList {
+    margin: 3vh 30vw;
+  }
+}
+@media (min-width: 1700px) {
+  .postList {
+    margin: 3vh 35vw;
+  }
+}

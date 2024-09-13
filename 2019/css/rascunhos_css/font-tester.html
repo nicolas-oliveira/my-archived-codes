@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
+    * {
+        margin: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    h1,p {
+        font-family: Helvetica, serif;
+    }
+    body,html {
+        height: 100%;
+    }
+    .grid-item {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    
+    .grid-item:hover{
+        background-color: #202020;
+        color: white;
+        cursor: pointer;
+    }
+    .grid-item.zoom {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-item.zoom:hover{cursor: unset;}
+    .grid-item.zoom h1 { 
+        font-size: 100px;
+        padding: 5rem;
+    }
+    .grid-item.zoom p{
+        padding: 0;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+    .row {
+        padding: 1em;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+.column.w10 {float: left;width: 10%;padding: 10px;} /* Muito pequeno pros grids */
+.column.w20 {float: left;width: 20%;padding: 10px;} /* Muito pequeno pros grids */
+.column.w25 {float: left;width: 25%;padding: 10px;}/* Para dividir em 4 por 100% */
+.column.w30 {float: left;width: 30%;padding: 10px;}
+.column.w33 {float: left;width: calc(100%/3);padding: 10px;}/* Para dividir em 3 por 100% */
+.column.w40 {float: left;width: 40%;padding: 10px;}
+.column.w50 {float: left;width: 50%;padding: 10px;}
+.column.w60 {float: left;width: 60%;padding: 10px;}
+.column.w70 {float: left;width: 70%;padding: 10px;}
+.column.w80 {float: left;width: 80%;padding: 10px;} /* Não tem tamanho para completar */
+.column.w90 {float: left;width: 90%;padding: 10px;} /* Não tem tamanho para completar */
+
+    .grid-container {display: grid;}
+    .grid-container.col2{grid-template-columns: auto;}
+    .grid-container.col2{grid-template-columns: auto auto;}
+    .grid-container.col3{grid-template-columns: repeat(3, auto);}
+    .grid-container.col4{grid-template-columns: repeat(4, auto);}
+    .grid-container.col5{grid-template-columns: repeat(5, auto);}
+    .grid-container.col6{grid-template-columns: repeat(6, auto);}
+    .grid-container.col7{grid-template-columns: repeat(7, auto);}
+    .grid-container.col8{grid-template-columns: repeat(8, auto);}
+    .grid-container.col9{grid-template-columns: repeat(9, auto);}
+    .grid-container.col10{grid-template-columns:repeat(10,auto);}
+    .grid-container.col12{grid-template-columns:repeat(12,auto);}
+
+    
+    </style>
+</head>
+<body>
+    
+        <div class="grid-item zoom" id="nn" onclick="setRandomColor()" ><h1>$</h1><p>Text: Color set</p></div>
+<div class="row">
+        <div class="grid-container col12">
+                <div class="grid-item"><h1>0</h1></div>
+                <div class="grid-item"><h1>1</h1></div>
+                <div class="grid-item"><h1>2</h1></div>
+                <div class="grid-item"><h1>3</h1></div>
+                <div class="grid-item"><h1>4</h1></div>
+                <div class="grid-item"><h1>5</h1></div>
+                <div class="grid-item"><h1>6</h1></div>
+                <div class="grid-item"><h1>7</h1></div>
+                <div class="grid-item"><h1>8</h1></div>
+                <div class="grid-item"><h1>9</h1></div>
+                <div class="grid-item"><h1>Aa</h1></div>
+                <div class="grid-item"><h1>Bb</h1></div>
+                <div class="grid-item"><h1>Cc</h1></div>
+                <div class="grid-item"><h1>Dd</h1></div>
+                <div class="grid-item"><h1>Ee</h1></div>
+                <div class="grid-item"><h1>Ff</h1></div>
+                <div class="grid-item"><h1>Gg</h1></div>
+                <div class="grid-item"><h1>Hh</h1></div>
+                <div class="grid-item"><h1>Ii</h1></div>
+                <div class="grid-item"><h1>Jj</h1></div>
+                <div class="grid-item"><h1>Kk</h1></div>
+                <div class="grid-item"><h1>Ll</h1></div>
+                <div class="grid-item"><h1>Mm</h1></div>
+                <div class="grid-item"><h1>Nn</h1></div>
+                <div class="grid-item"><h1>Oo</h1></div>
+                <div class="grid-item"><h1>Pp</h1></div>
+                <div class="grid-item"><h1>Qq</h1></div>
+                <div class="grid-item"><h1>Rr</h1></div>
+                <div class="grid-item"><h1>Ss</h1></div>
+                <div class="grid-item"><h1>Tt</h1></div>
+                <div class="grid-item"><h1>Uu</h1></div>
+                <div class="grid-item"><h1>Vv</h1></div>
+                <div class="grid-item"><h1>Ww</h1></div>
+                <div class="grid-item"><h1>Xx</h1></div>
+                <div class="grid-item"><h1>Zz</h1></div>
+                <div class="grid-item"><h1>!</h1></div>
+                <div class="grid-item"><h1>"</h1></div>
+                <div class="grid-item"><h1>#</h1></div>
+                <div class="grid-item"><h1>$</h1></div>
+                <div class="grid-item"><h1>%</h1></div>
+                <div class="grid-item"><h1>&</h1></div>
+                <div class="grid-item"><h1>'</h1></div>
+                <div class="grid-item"><h1>()</h1></div>
+                <div class="grid-item"><h1>*</h1></div>
+                <div class="grid-item"><h1>+</h1></div>
+                <div class="grid-item"><h1>´</h1></div>
+                <div class="grid-item"><h1>.</h1></div>
+                <div class="grid-item"><h1>/</h1></div>
+                <div class="grid-item"><h1>[]</h1></div>
+                <div class="grid-item"><h1>{}</h1></div>
+                <div class="grid-item"><h1>^</h1></div>
+                <div class="grid-item"><h1>_</h1></div>
+                <div class="grid-item"><h1>|</h1></div>
+                <div class="grid-item"><h1>;</h1></div>
+        </div>
+    </div>
+
+    <script>
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+
+
+        function setRandomColor() {
+            var nn = document.getElementById('nn')
+            nn.style.color = getRandomColor();
+        }
+    </script>
+</body>
+</html>

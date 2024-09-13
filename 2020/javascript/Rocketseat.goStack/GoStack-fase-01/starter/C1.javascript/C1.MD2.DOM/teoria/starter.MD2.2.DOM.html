@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Curso javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" id="nome">
+           <!--  <input type="text" name="nome2" id="nome2" class="nomeporra"> -->
+            <button class="botao">Adicionar</button>
+        </div>
+        <script>
+            
+            var inputElement2 = document.querySelector('div#app input'); //Busca pelo elemento correspondente no html 
+            var inputElement3 = document.querySelector('input[name=nome]');
+            var inputElement4 = document.querySelector('input'); //Apenas um
+            var inputElement5 = document.querySelectorAll('input'); //Todos
+            // var inputElement = document.getElementsByClassName('nomeporra'); Obtem pela classe
+
+            console.log(inputElement5);
+
+            //Manipulando a DOM sem usar tag HTML
+            var btnElement = document.querySelector('button.botao');
+            
+            btnElement.onclick = function(){
+                var text = inputElement3.value;
+                alert(text);
+            }
+        </script>
+    </body>
+</html>

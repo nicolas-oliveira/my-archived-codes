@@ -1,0 +1,144 @@
+{
+    "contributors":null,
+    "coordinates":null,
+    "created_at":"Fri May 15 15:34:24 +0000 2020",
+    "display_text_range":[
+       0,
+       21
+    ],
+    "entities":{
+       "hashtags":[
+          {
+             "text":"testepost",
+             "indices":[
+                11,
+                21
+             ]
+          }
+       ],
+       "symbols":[],
+       "user_mentions":[],
+       "urls":[]
+    },
+    "favorite_count":0,
+    "favorited":false,
+    "full_text":"Teste post #testepost",
+    "geo":null,
+    "id":1261319026392924200,
+    "id_str":"1261319026392924161",
+    "in_reply_to_screen_name":null,
+    "in_reply_to_status_id":null,
+    "in_reply_to_status_id_str":null,
+    "in_reply_to_user_id":null,
+    "in_reply_to_user_id_str":null,
+    "is_quote_status":false,
+    "lang":"en",
+    "place":null,
+    "reply_count":0,
+    "retweet_count":0,
+    "retweeted":false,
+    "source":"",
+    "supplemental_language":null,
+    "truncated":false,
+    "user":{}
+},
+{
+    "contributors":null,
+    "coordinates":null,
+    "created_at":"Fri May 15 15:34:44 +0000 2020",
+    "display_text_range":[
+       0,
+       40
+    ],
+    "entities":{
+       "hashtags":[
+          {
+             "text":"testepost",
+             "indices":[
+                30,
+                40
+             ]
+          }
+       ],
+       "symbols":[
+ 
+       ]
+    },
+    "favorite_count":0,
+    "favorited":true,
+    "full_text":"RT @NickCageNick1: Teste post #testepost",
+    "geo":null,
+    "id":1261319109771497500,
+    "id_str":"1261319109771497474",
+    "in_reply_to_screen_name":null,
+    "in_reply_to_status_id":null,
+    "in_reply_to_status_id_str":null,
+    "in_reply_to_user_id":null,
+    "in_reply_to_user_id_str":null,
+    "is_quote_status":false,
+    "lang":"en",
+    "place":null,
+    "retweet_count":1,
+    "retweeted":true,
+    "retweeted_status":{
+       "contributors":null,
+       "coordinates":null,
+       "created_at":"Fri May 15 15:34:24 +0000 2020",
+       "display_text_range":[
+          0,
+          21
+       ],
+       "entities":{
+          "hashtags":[
+             {
+                "text":"testepost",
+                "indices":[
+                   11,
+                   21
+                ]
+             }
+          ],
+          "symbols":[
+ 
+          ],
+          "user_mentions":[
+ 
+          ],
+          "urls":[
+ 
+          ]
+       },
+       "favorite_count":1,
+       "favorited":true,
+       "full_text":"Teste post #testepost",
+       "geo":null,
+       "id":1261319026392924200,
+       "id_str":"1261319026392924161",
+       "in_reply_to_screen_name":null,
+       "in_reply_to_status_id":null,
+       "in_reply_to_status_id_str":null,
+       "in_reply_to_user_id":null,
+       "in_reply_to_user_id_str":null,
+       "is_quote_status":false,
+       "lang":"en",
+       "place":null,
+       "retweet_count":1,
+       "retweeted":true,
+       "self_thread":{
+          "id":1261319026392924200,
+          "id_str":"1261319026392924161"
+       },
+       "source":"",
+       "supplemental_language":null,
+       "truncated":false,
+       "user":{
+ 
+       }
+    },
+    "source":"",
+    "supplemental_language":null,
+    "truncated":false,
+    "user":{
+ 
+    }
+ }

@@ -1,0 +1,170 @@
+{
+    "contributors":null,
+    "coordinates":null,
+    "created_at":"Fri May 15 16:30:06 +0000 2020",
+    "display_text_range":[0,46],
+    "entities":{
+       "hashtags":[
+          0:{
+             "text":"testepost",
+             "indices":[
+                11,
+                21
+             ]
+          },
+          1:{
+             "text":"a",
+             "indices":[22,24]
+          },
+          2:{
+             "text":"b",
+             "indices":[
+                25,
+                27
+             ]
+          },
+          3:{
+             "text":"c",
+             "indices":[
+                28,
+                30
+             ]
+          }
+       ],
+       "symbols":[],
+       "urls":[],
+       "user_mentions":[
+          0:{
+             "id":2319872346,
+             "id_str":"2319872346",
+             "indices":[31,46],
+             "name":"PEDROGA 🌈⃤🇭🇰",
+             "screen_name":"pedrohypollite"
+          }
+       ]
+    },
+    "favorite_count":0,
+    "favorited":false,
+    "full_text":"Teste post #testepost #a #b #c @pedrohypollite",
+    "geo":null,
+    "id":1261333044235034600,
+    "id_str":"1261333044235034626",
+    "in_reply_to_screen_name":null,
+    "in_reply_to_status_id":null,
+    "in_reply_to_status_id_str":null,
+    "in_reply_to_user_id":null,
+    "in_reply_to_user_id_str":null,
+    "is_quote_status":false,
+    "lang":"en",
+    "place":null,
+    "reply_count":0,
+    "retweet_count":0,
+    "retweeted":false,
+    "source":"",
+    "supplemental_language":null,
+    "truncated":false,
+    "user":{
+       "advertiser_account_service_levels":[],
+       "advertiser_account_type":"none",
+       "blocked_by":false,
+       "blocking":false,
+       "business_profile_state":"none",
+       "can_dm":true,
+       "can_media_tag":true,
+       "contributors_enabled":false,
+       "created_at":"Wed Oct 17 02:25:17 +0000 2018",
+       "default_profile":false,
+       "default_profile_image":false,
+       "description":"Preguiçoso profissional, programador nas horas vagas, mineiro nos fins de semana e libertário",
+       "entities":{
+          "description":{
+             "urls":[]
+          }
+       },
+       "fast_followers_count":0,
+       "favourites_count":2007,
+       "follow_request_sent":false,
+       "followed_by":false,
+       "followers_count":34,
+       "following":false,
+       "friends_count":463,
+       "geo_enabled":false,
+       "has_custom_timelines":true,
+       "has_extended_profile":false,
+       "id":1052385025960894500,
+       "id_str":"1052385025960894465",
+       "is_translation_enabled":false,
+       "is_translator":false,
+       "lang":null,
+       "listed_count":0,
+       "location":"",
+       "media_count":61,
+       "muting":false,
+       "name":"nick 🇭🇰",
+       "normal_followers_count":34,
+       "notifications":false,
+       "pinned_tweet_ids":[1178677703567974400],
+       "pinned_tweet_ids_str":["1178677703567974406"],
+       "profile_background_color":"000000",
+       "profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png",
+       "profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png",
+       "profile_background_tile":false,
+       "profile_banner_extensions_alt_text":null,
+       "profile_banner_extensions_media_availability":null,
+       "profile_banner_extensions_media_color":{},
+       "profile_banner_url":"https://pbs.twimg.com/profile_banners/1052385025960894465/1587764034",
+       "profile_image_extensions_alt_text":null,
+       "profile_image_extensions_media_availability":null,
+       "profile_image_extensions_media_color":{},
+       "profile_image_url":"http://pbs.twimg.com/profile_images/1253799210958422016/p4yxX0bV_normal.jpg",
+       "profile_image_url_https":"https://pbs.twimg.com/profile_images/1253799210958422016/p4yxX0bV_normal.jpg",
+       "profile_interstitial_type":"",
+       "profile_link_color":"1F1F1F",
+       "profile_sidebar_border_color":"000000",
+       "profile_sidebar_fill_color":"000000",
+       "profile_text_color":"000000",
+       "profile_use_background_image":false,
+       "protected":false,
+       "require_some_consent":false,
+       "screen_name":"NickCageNick1",
+       "statuses_count":1212,
+       "time_zone":null,
+       "translator_type":"none",
+       "url":null,
+       "utc_offset":null,
+       "verified":false,
+       "want_retweets":false
+    }
+ }
+
+
+
+{
+    {created_at: "Fri May 15 18:24:52 +0000 2020", id: 1261361926535286800, id_str: "1261361926535286790",…}
+contributors: null
+coordinates: null
+created_at: "Fri May 15 18:24:52 +0000 2020"
+display_text_range: [16, 80]
+entities: {hashtags: [{text: "testecomment", indices: [22, 35]}, {text: "a", indices: [36, 38]},…], symbols: [],…}
+favorite_count: 0
+favorited: false
+full_text: "@pedrohypollite Teste #testecomment #a #b #c #d @pedrohypollite @cnt_pr @brusnos"
+geo: null
+id: 1261361926535286800
+id_str: "1261361926535286790"
+in_reply_to_screen_name: "pedrohypollite"
+in_reply_to_status_id: 1261360529299259400
+in_reply_to_status_id_str: "1261360529299259393"
+in_reply_to_user_id: 2319872346
+in_reply_to_user_id_str: "2319872346"
+is_quote_status: false
+lang: "es"
+place: null
+reply_count: 0
+retweet_count: 0
+retweeted: false
+source: "<a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>"
+supplemental_language: null
+truncated: false
+user: {id: 1052385025960894500, id_str: "1052385025960894465", name: "nick 🇭🇰",…}
+}

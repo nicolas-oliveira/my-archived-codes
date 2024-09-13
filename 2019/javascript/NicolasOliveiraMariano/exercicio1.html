@@ -1,0 +1,58 @@
+<!--
+    Desenvolva um sistema web que receba o nome do usuário e seu ano de
+nascimento. Imprimir a categoria do atleta, seguindo a seguinte tabela:
+• Abaixo de 14 - mirim
+• 14 e 15 anos – infantil
+• 16 e 17 anos – juvenil
+• De 18 a 20 anos – juniores
+• Acima de 20 – profissional
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 1</title>
+    <style>
+    label {
+        font-size: 18px;
+    }
+    body {
+        background-color: #000;
+        background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(102, 126, 234,1)  100%,rgba(118, 75, 162,1) 35%);
+    }
+    div {
+        background: blanchedalmond;
+        position: absolute;
+        text-align: center;
+        padding: 50px;
+        border: 10px solid rgba(7, 7, 121, 0.445);
+        width: 500px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    label {
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1>Exercício 1</h1>
+        <label>Qual é o seu nome? </label>
+        <input type="text" id='nome'><br><br>
+        <label>Digite o ano do seu nascimento: </label>
+        <input type="number" id='ano'><br><br>
+        <input type="button" value='Confirmar' id='confirmar' onclick="confirma()"><br><br>
+        <label id='result'></label>
+    </div>
+    <script src="exercicio1.js"></script>
+
+</body>
+</html>

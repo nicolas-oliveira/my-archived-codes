@@ -1,0 +1,53 @@
+<!-- 
+    Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
+
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    Ao clicar no botão, a função adicionar() deve ser disparada adicionando um novo item a lista de
+    nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos
+    demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="app">
+        <input type="text" name="nome" id="nome">
+        <button type="submit" class="botao">Adicionar</button>
+        <ul></ul>
+    </div>
+   
+    <script>
+        
+        var btnElement = document.querySelector('.botao');
+        var app = document.querySelector('.app'); //Seleciona a div
+        
+        var containerElement = document.querySelector('ul'); //Coloca o ul na div app
+        app.appendChild(containerElement);
+
+        btnElement.onclick = function() {
+            var textGetElement = document.querySelector('input[name=nome]').value;
+            if(textGetElement != ""){
+                var liElement = document.createElement('li');
+                var textShowElement = document.createTextNode(textGetElement); 
+                
+                containerElement.appendChild(liElement);//Coloca o li no ul
+                liElement.appendChild(textShowElement); //Coloca o texto no li
+            }
+            document.querySelector('input[name=nome]').value = "";
+        }
+
+
+        console.log(app);
+    </script>
+</body>
+</html>

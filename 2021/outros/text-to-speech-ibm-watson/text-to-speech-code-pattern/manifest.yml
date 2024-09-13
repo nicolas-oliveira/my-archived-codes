@@ -1,0 +1,14 @@
+---
+declared-services:
+    ttscp-text-to-speech:
+        label: text_to_speech
+        plan: lite
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  name: text-to-speech-code-pattern
+  buildpacks:
+  - sdk-for-nodejs
+  services:
+  - ttscp-text-to-speech

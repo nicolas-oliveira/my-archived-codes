@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dev\'s CHAT</string>
+    <string name="name_label">Digite seu nome:</string>
+    <string name="email_label">Digite seu email:</string>
+    <string name="label_login">Entrar</string>
+    <string name="no_contact">Nenhum contato</string>
+    <string name="no_message">Nenhum mensagem</string>
+    <string name="write_message">Escreva sua mensagem</string>
+    <string name="send">Enviar</string>
+    <string name="contacts">Contatos</string>
+    <string name="how_are">Olá, como vai você?</string>
+    <string name="default_writer">Alexandre Higino, 21/03/2021 09:00</string>
+    <string name="default_contact">Alexandre Higino</string>
+    <string name="default_email">alehigino@teste.com.br</string>
+</resources>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Testando a tag Input</title>
+</head>
+<body>
+	<h1>Meu primeiro formulário</h1>
+	<form>
+		<label>Qual o seu nome?</label>
+		<input type="text" id="txtNome" placeholder="Digite aqui..."><br><br>
+		<label>Qual a sua senha?</label>
+		<input type="password" id="txtPassword" placeholder="Digite aqui..."><br><br>
+		<label>Qual seu curso?</label> <br>
+		<input type="radio" name="curso" checked=""> Sistemas <br>
+		<input type="radio" name="curso"> Engenharia <br>
+		<input type="radio" name="curso"> Direito <br>
+		<input type="radio" name="curso"> Medicina <br> <br>
+		<label>Quais Disciplinas você cursa?</label><br>
+		<input type="checkbox" name=""> Web<br>
+		<input type="checkbox" name=""> Lógica<br>
+		<input type="checkbox" name=""> IhC<br>
+		<input type="checkbox" name=""> GQS<br>
+		<input type="checkbox" name=""> TCC<br><br>
+		<textarea placeholder="Digite a disciplina" rows="5" cols="20"></textarea><br>
+		<label>Escolha seu idioma: </label>
+		<select>
+			<option>Português</option>
+			<option>Inglês</option>
+			<option>Espanhol</option>
+		</select><br><br>
+
+		<input type="button" value="Enviar" onclick="enviar()">
+		<input type="reset" value="Limpar">
+ 	</form>
+
+ 	<script type="text/javascript">
+ 		function enviar(){
+ 			var nome = document.getElementById('txtNome').value;
+ 			alert(' Olá ' + nome + '!')
+ 		}
+ 	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+@font-face {
+    font-family: title;
+    src: url("smalltypewriting/SmallTypeWriting.ttf")
+}
+ul#head {
+    font-family: title;
+    padding: 30px 30px 80px;
+    position: fixed;
+    align-items: baseline;
+    list-style-type: none;
+    font-size: 20px;
+}
+h1#head {
+    font-family: title;
+    background-image: linear-gradient(to bottom, rgba(11, 88, 28, 0.45) 0%, rgba(15, 128, 21, 0.45) 100%), url(code.webp);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgorund-size: cover;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 0;
+    block-size: 100px;
+    border-top: 0px;
+    background-color: rgb(2, 73, 39);
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div#texto {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: white;
+}
+
+div#box {
+    width: 900px;
+    margin: 0px auto;
+    border: 8px solid white;
+    box-shadow: 1px 1px 10px black;
+    background-color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    background-color: #006B38FF;
+}

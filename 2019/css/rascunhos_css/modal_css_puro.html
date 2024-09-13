@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Modal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
+    * {
+        margin: 0;/* Retirar margem padrão do navegador */
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    body, html {
+        height: 100%;
+    }
+    body {
+        background: #c2c2c2;
+    }
+    article {
+        display: inline-block;
+        background: #ffffff;
+        border-radius: 20px;
+        border: solid 10px rgba(0, 0, 0, 0.445);
+        margin: 100px;
+        padding: 100px;
+        margin-bottom: 0;
+    }
+    article h1 {
+        font-family:  'Zilla Slab', serif;
+        padding: 10px;
+        font-size: 44px;
+    }
+    article p {
+        font-family:  'Zilla Slab', serif;
+        padding: 5px;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: justify;
+        margin-top: 10px;
+    }
+    /*//////////////DEFINIÇÕES DO MODAL/////////////////*/
+    button {
+        /*  #4CAF50  Green
+            #008CBA  Blue 
+            #f44336  Red 
+            #e7e7e7  Gray 
+            #555555  Black 
+            */
+        background-color: #f44336;
+        border-radius: 10px;
+        color: white;
+        border:none;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: white;
+        color:black;
+        border: solid 2px #f44336;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.349), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    /* MODAL */
+    .modal {
+        display: none; /* esconder por padrão */
+        position: fixed; /* fixar na tela */
+        z-index: 1; /*  */
+        padding-top: 100px; /* distancia do topo da div */
+        left:0; /* distancia da esquerda */
+        top:0; /* distancia da direita */
+        width: 100%; /* tornar flexivel na largura */
+        height: 100%; /* tornar flexivel na altura */
+        overflow: auto; /* permitir o scroll caso seja necessario */
+        background-color: rgb(0,0,0); /* para internet lenta */
+        background-color: rgba(0,0,0,0.4); /* fundo do box por cima do conteudo */
+    }
+    /* conteudo do modal */
+    .modal-content {
+        background-color: #fefefe;
+        border-radius: 10px;
+        margin:auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size:28px;
+        font-weight: bold;
+    }
+    .close:hover,.close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Modal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam explicabo voluptatibus deserunt in, culpa iste ipsam aut nisi, praesentium facere cupiditate ex assumenda, eligendi nam velit magni aliquid? Rem, doloribus.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores officia tenetur distinctio ipsa repellat, cupiditate voluptates et quas provident fuga molestias aliquam ratione itaque nihil sapiente dignissimos fugit saepe pariatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reiciendis optio tempore quo consequuntur? Fugiat dolore deleniti eos, optio adipisci maxime obcaecati accusantium minus assumenda sequi laudantium sapiente quaerat ad.</p>
+            <br><button id="btn">Modal</button>
+            <div id="meumodal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times</span>
+                    <h1>Meu Modal</h1>
+                    <p>Este é o meu primeiro modal em css puro</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script>
+    var modal = document.getElementById("meumodal"); //Declaração do modal no JS
+    var btn = document.getElementById("btn"); //Declarar o botão de id btn
+    var span = document.getElementsByClassName("close")[0]; //Obtendo apenas o botao de elemento close [0]
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function(){
+        modal.style.display = "none";
+    }
+    /* window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    } */
+    </script>
+</body>
+</html>

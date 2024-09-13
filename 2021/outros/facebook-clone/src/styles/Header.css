@@ -1,0 +1,29 @@
+.header {
+  background-color: #4A90E2;
+  padding: 20px;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.33s;
+}
+.profile:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+img {
+  width: 130px;
+}
+.header .profile path {
+  fill: #fff;
+}
+.header .profile svg {
+  margin-left: 5px;
+}

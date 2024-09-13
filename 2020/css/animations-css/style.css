@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    height: 100vh;
+  }
+  body {
+    background: #7159c1;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+  }
+  h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: white;
+  }
+  form {
+    margin: 20px 0;
+    background-color: white;
+    padding: 60px 25px;
+    border-radius: 5px;
+  }
+  form .input-block label {
+    font-size: 14px;
+    color: darkslateblue;
+  }
+  form .input-block input {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+    color: #7159c1;
+    border-radius: 2px;
+    border: 1px solid #ccddef;
+    outline-color: #7159c1;
+  }
+  form .btn-login {
+    display: block;
+    min-width: 130px;
+    border: none;
+    background-color: #7159c1;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+  }
+  /* APARIÇÃO DO FORMULARIO */
+  form {
+    animation-name: fade;
+    animation-duration: 700ms;
+  }
+  @keyframes fade {
+    from{
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /* Fazer os campos aparecerem da esquerda para a direita suavemente em momentos distintos */
+  form {
+    overflow: hidden;
+  }
+  form .input-block,
+  form .btn-login {
+    animation: fadeInMove 500ms backwards;
+    animation-delay: 350ms;
+  
+  }
+  @keyframes move {
+    from {  
+      opacity: 0;
+      transform: translateX(-35%);
+    }
+    to {
+      opacity: 1; 
+      transform: translateX(0%);
+    }
+  }
+  input-block {
+    animation-name: move;
+    animation-duration: 500ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+  }
+  form .btn-login {
+    animation: fadeInMove 500ms backwards;
+    animation-delay: 350ms;
+  
+  }
+  @keyframes fadeInMove {
+    from {  
+      opacity: 0;
+      transform: translateX(-35%);
+    }
+    to {
+      opacity: 1; 
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Quando clicar no botão, sumir com o form */
+  .form-hide {
+    animation: down 500ms  forwards;
+    animation-timing-function: ease;
+  }
+  
+@keyframes down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* Form No-no */
+form.validate-error {
+  animation: nono 250ms linear, 
+  fade paused; /* Pausa a animação do fade enquanto acontece a animação nono */
+  animation-iteration-count: 2;
+}
+@keyframes nono {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-15%);
+  }
+  80% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* squares */
+
+.squares li {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(205, 221, 239, 0.15);
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  animation: up 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-900px)  rotate(960deg);
+  }
+}

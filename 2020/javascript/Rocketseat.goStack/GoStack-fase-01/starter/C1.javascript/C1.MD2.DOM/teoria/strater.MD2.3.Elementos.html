@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Curso javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input id="nome"/>
+        </div>
+        <script>
+            
+            //Criando elementos
+            var linkElement = document.createElement('a');
+            //linkElement.href =
+            linkElement.setAttribute('href', 'http://www.google.com');
+            
+            var textElement = document.createTextNode('Acessar site');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            /* var inputElement = document.querySelector('#nome');
+            conteinerElement.removeChild(inputElement); */
+
+        </script>
+    </body>
+</html>

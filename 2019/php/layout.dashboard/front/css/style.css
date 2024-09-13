@@ -1,0 +1,188 @@
+
+@font-face {
+    font-family: 'haasa';
+    src: url(../fonts/alte-haas-grotesk/AlteHaasGroteskBold.ttf);
+}
+@font-face {
+    font-family: 'ibm';
+    src: url(../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'ibmthin';
+    src: url(../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf);
+}
+/* Limpar o estilo do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+html, body {
+    height: 100%;
+}
+/* Display flex para todo o corpo */
+body {
+    display: flex;
+    box-sizing: border-box;
+}
+/* Estilização de fontes */
+li, p, h2 {
+    font-family: 'ibmthin';
+    text-decoration: none;
+}
+h1 {
+    font-family: 'haasa';
+    font-size: 2em;
+    font-weight: 100;
+}
+h2 {
+    font-size: 1.4em;
+    font-weight: 200;
+}
+h3 {
+    font-family: 'ibm';
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #6adbdc;
+
+}
+
+p {
+    font-size: 1em;
+    margin-top: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+li {
+    list-style-type: none;
+    margin-top: 16px;
+    font-weight: bold;
+}
+.nocard.pink {
+    color: #e93b84;
+}
+.nocard.white {
+    color: #f2feff;
+    text-align: right;
+    margin: auto;
+}
+/* Criação dos grids */
+.column.col2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+}
+.column.col3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Torna todos de tamanho igual */
+
+}
+.left {
+    padding: 25px 10px 10px 10px;
+    background-color: #415c79;
+}
+.right {
+    background-color:#38506a;
+    color: #f2feff;
+}
+.right .card {
+    position: relative;
+}
+/* Estilização do card */
+.card {
+    margin: 20px 40px 0px 40px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #314961;
+}
+/* Estilização das caixas de texto sem os cards */
+.nocard {
+    margin: 10px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+}
+/* Estilização dos círculos */
+.dot  {
+    position: relative;
+    text-align: center; /* Para fixar os icones */
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 1em;
+}
+.left .dot {
+    background-color: #3b556e; /* Cor dos circulos com cores correspondentes e relativas ao fundo */
+}
+.right .dot {
+    background-color: #314961;
+}
+.right .dot:hover {
+    cursor: pointer;
+    background-color: #2d455c;
+    -webkit-box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.47);
+    box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.47);
+}
+.left .dot:hover {
+    cursor: pointer;
+    background-color: #314961;
+    -webkit-box-shadow: 0px 0px 18px -9px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 18px -9px rgba(0,0,0,1);
+    box-shadow: 0px 0px 18px -9px rgba(0,0,0,1);
+}
+.column.col3 .card {
+    margin-bottom: -100px;
+}
+/* Estilização dos botões */
+button {
+    font-family: 'IBM';
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #e93b84;
+    border-style: none;
+    color: #f2feff;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #fb5fa0;
+    -webkit-box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.47);
+    box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.47);
+}
+button:last-child {
+    margin-top: 30px;
+}
+/* Icons Stylization */
+
+i {
+    display: table-cell;
+    vertical-align: middle; 
+    text-align: center; 
+}
+.fab, .fas {
+    float: left;
+    padding: 10px;
+    
+}
+.fab, .fas {
+
+    color: #e93b84;
+}
+.fab:hover, .fas:hover {
+
+    color: #fb5fa0;
+}
+.fas.fa-arrow-down {
+    padding: 7px 7px 0px 0px;
+    color: #e93b84;
+}
+#chart {
+    max-width: 1270px;
+    margin: 0 auto;
+    
+}

@@ -1,0 +1,40 @@
+:root {
+  --white: #fff;
+  --grey: #ebf2f5;
+  --grey-darker: #D3E2E5;
+  --blue: #15B6D6;
+  --blue-light: #17d6eb;
+  --blue-lighter: #96feff;
+  --blue-darker: #0089a5;
+  --yellow: #FFD666;
+  --green: #37C77F;
+  --brown: #8D734B;
+  --pink: #FF669D;
+  --text-title-blue: #0089A5;
+  --text-title: #4D6F80;
+  --text-base: #5C8599;
+  --text-ground: #8FA7B2;
+  --line: #D3E2E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  background: var(--grey);
+
+
+}
+
+body, input, button, textarea {
+  font: 600, 18px, Nunito, sans-serif;
+}
+
+fade-appear, .fade-enter {
+  opacity: 0;
+  z-index: 1;
+}

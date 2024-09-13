@@ -1,0 +1,266 @@
+/* Reduzir a margem acrescentada pelo navegador */
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+@font-face {
+    font-family: 'Loghub';
+    src: url(../fonts/California.otf);
+}
+/* Fundo gradiente */
+@keyframes AnimationName {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+        background-position: 0% 50%;
+    }
+} 
+body {
+    background-image: linear-gradient(-45deg,#031347,#1b44c9,#c416ac,#630556);
+    background-size: 400% 400%;
+    animation: AnimationName 25s ease infinite; 
+}
+h1, h2 {
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    color: white;
+}
+h2 {
+    font-size: 12px;
+}
+#showmodal h1 {
+    color: black;
+}
+a {
+    font-family: sans-serif;
+}
+/* Estilização das divs  */
+.box { /* Centralizado na viewport do navegador */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+}
+.boxintern {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.whitebox {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.homeintern{
+    padding: 31px 31px 1000px;
+    background-color: white;
+    margin: 0 70px 0 70px;
+    border-radius: 78px;
+}
+.homeintern nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16vh;
+    padding: 0 4vw 0vw 4vw;
+}
+.homeintern a {
+    margin: 0vw 2vw 0vw 0vw;
+}
+/* Estilização dos formulários */
+input[type=text], input[type=password], input[type=email]{
+    width: 100%;
+    padding: 16px 40px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(204, 204, 204, 0.5);
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-bottom: 0;
+    color: white;
+    
+}
+input:focus {
+    outline: none; /* Retira a linha quadrada quando selecionado */
+    box-shadow: 0px 0px 4px #0066ff; /* Adiciona uma linha fictícia com a sombra do input */
+}
+.whitebox input {
+    color: black;
+    padding: 5px 10px;
+}
+/* ESTILIZAÇÃO DO MODAL */
+.modal {
+    display: none; /* esconder por padrão */
+    position: fixed; /* fixar na tela */
+    z-index: 1; /*  */
+    padding-top: 100px; /* distancia do topo da div */
+    left:0; /* distancia da esquerda */
+    top:0; /* distancia da direita */
+    width: 100%; /* tornar flexivel na largura */
+    height: 100%; /* tornar flexivel na altura */
+    overflow: auto; /* permitir o scroll caso seja necessario */
+    background-color: rgb(0,0,0); /* para internet lenta */
+    background-color: rgba(0,0,0,0.5); /* fundo do box por cima do conteudo */
+}
+.modal .whitebox{
+    flex-direction: column;
+    margin:auto;
+    width: 45%;
+}
+.close {
+    float: right;
+    font-size:28px;
+    font-weight: bold;
+    color: rgba(163, 163, 163, 0.5);
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+input[type="date"], input[type=number] {
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.678);
+}
+input[type="submit"]:focus{
+    outline: unset;
+}
+input::placeholder {
+    color: rgb(206, 206, 206,0.9);
+}
+/* ESTILIZAÇÃO DOS BOTÕES */
+button, input[type=submit] {
+    padding: 7px;
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+    margin: 8px 0;
+    background-color: rgba(23, 64, 197, 0.9);
+    color: white;
+}
+button:hover, input[type=submit]:hover {
+    cursor: pointer;
+    outline: none;
+    background-color: rgba(23, 64, 197, 0.5);
+}
+fieldset {
+    border: 1px gray;
+}
+/* Estilização dos links para agir como buttons */
+a {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+    margin: 8px 0;
+    background-color: rgba(23, 64, 197, 0.9);
+    color: white;    
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    background-color: rgba(23, 64, 197, 0.5);
+}
+/* Estilização dos ícones */
+.icon {
+    color: white;
+}
+.user {
+    position: relative;
+}
+.user .fa-user {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+.password {
+    position: relative;
+}
+.password .fa-key {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    table { 
+            width: 100%; 
+    }
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+    }
+    tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+    

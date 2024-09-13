@@ -1,0 +1,57 @@
+<!--
+Desenvolva um sistema web que receba a capacidade total (em litros) de uma caixa
+D’agua e a quantidade total de litros de água que a caixa recebe por minuto. O
+sistema deverá calcular quantos minutos será necessário para encher a caixa.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+       
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 8</title>
+    <style>
+    body{
+       /*  #020024 #667eea  #764ba2  */
+        background: linear-gradient(90deg, #020024 0%, #667eea 0%, #764ba2 35% );
+    /*     background: linear-gradient(90deg ); */
+    }
+    div#box{
+        background: #f8f9fa;
+        position: absolute;
+        text-align: center;
+        padding: 50px;
+        border: 10px solid rgba(7, 7, 121, 0.445);
+        width: 500px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    label {
+        font-size: 18px;
+        font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Exercício 8</h1>
+        <label>Quantidade em litros: </label>
+        <input type='number' id='litros'><br><br>
+        <label>Quantidade de litros/minutos: </label>
+        <input type='number'id='minutos'><br><br>
+        <input type="button" value='Exibir' onclick="calcular()"><br><br>
+        <label id='resultado'></label>
+
+    </div>
+    
+    <script src="exercicio8.js"></script>
+
+
+
+
+</body>
+</html>
